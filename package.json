@@ -9,7 +9,8 @@
     "prettier-check": "prettier --list-different **/*.js",
     "lint-fix": "eslint --fix .",
     "lint-check": "eslint .",
-    "rename": "react-native-rename"
+    "rename": "react-native-rename",
+    "prepush": "detox test"
   },
   "dependencies": {
     "@sentry/react-native": "^1.0.4",
@@ -79,5 +80,21 @@
       }
     },
     "test-runner": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix ./App",
+      "git add"
+    ],
+    "*.{css,json}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
