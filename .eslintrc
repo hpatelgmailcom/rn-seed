@@ -29,5 +29,23 @@
   },
   "rules": {
     "react-native/no-raw-text": 0 // Avoid false positive, wait for fix
+  },
+  "globals": {
+    "beforeAll": true,
+    "afterAll": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "describe": true,
+    "document": true,
+    "expect": true,
+    "it": true,
+    "jest": true,
+    "page": true,
+    "test": true,
+    "window": true,
+    "device": true,
+    "element": true,
+    "by": true,
+    "jasmine": true
   }
 }
