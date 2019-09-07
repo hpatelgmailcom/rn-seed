@@ -1,21 +1,40 @@
-<div align="center">
-    <img src="App/Assets/Images/TOM-Legend.png" alt="Logo" width="100%">
-</div>
 
 
-# TheCodingMachine React Native boilerplate
+
+# React Native boilerplate
 
 This project is a [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application.
 
+[React Native boilerplate](https://github.com/thecodingmachine/react-native-boilerplate_ with additonal liberties.
+
 The boilerplate provides **an architecture optimized for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic. It is extremely documented so that each piece of code that lands in your application can be understood and used.
 
+** NOTE: Additional documentation can be found in nested directories
+Additional libraries.
+
 ```
-If you love this documentation, give us a star, you will be a ray of sunshine in our lives :)
+
+npm install --save i18n-js
+npm install react-native-share --save
+npm install --save react-native-push-notification
+npm i react-native-app-intro-slider --save
+npm install --save @sentry/react-native
+npm install --save react-native-vector-icons
+npm install --save react-native-copilot
+npm install --save react-native-svg
+npm install —save i18n-js
+npm install —save react-native-config
+npm install --save react-native-device-info
+npm install --save moment
+npm install moment-timezone --save
+npm install --save validate.js
 ```
 
 ## Architecture
 
 The driving goal of the architecture of the boilerplate is separation of concerns. Namely:
+
+Key differences is we are using ducks pattern
 
 - **Presentational components are separated from containers** (aka "screens").
 
@@ -123,13 +142,6 @@ Assuming you have all the requirements installed, you can setup and run the proj
 
 If your applicaiton fails to start after using the `yarn run rename` command, please take a look at [this issue](https://github.com/thecodingmachine/react-native-boilerplate/issues/34)
 
-## License
-
-This project is released under the [MIT License](LICENSE).
-
-## About us
-
-[TheCodingMachine](https://www.thecodingmachine.com/) is a web and mobile agency based in Paris and Lyon, France. We are [constantly looking for new developers and team leaders](https://www.thecodingmachine.com/nous-rejoindre/) and we love [working with freelancers](https://coders.thecodingmachine.com/). You'll find [an overview of all our open source projects on our website](https://thecodingmachine.io/open-source) and on [Github](https://github.com/thecodingmachine).
 
 ## Alternative boilerplates
 
