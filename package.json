@@ -76,7 +76,7 @@
   "detox": {
     "configurations": {
       "ios.sim.debug": {
-        "binaryPath": "ios/clockapp/ios/build/AirClockApp/Build/Products/Debug-iphonesimulator/AirClockApp.app",
+        "binaryPath": "ios/build/AirClockApp/Build/Products/Debug-iphonesimulator/AirClockApp.app",
         "build": "xcodebuild -project ios/AirClockApp.xcodeproj -UseModernBuildSystem=NO -scheme AirClockApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
         "type": "ios.simulator",
         "name": "iPhone X"
