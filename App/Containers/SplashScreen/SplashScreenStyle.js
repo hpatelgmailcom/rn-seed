@@ -5,17 +5,21 @@ import ApplicationStyles from 'App/Theme/ApplicationStyles'
 export default StyleSheet.create({
   container: {
     ...ApplicationStyles.screen.container,
+    alignItems: 'center',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.company,
   },
   logo: {
+    alignItems: 'center',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
     height: 70,
     width: 70,
-    backgroundColor: 'white',
+  },
+  name: {
+    fontSize: 48,
+    marginTop: 120,
+    color: Colors.white,
   },
 })

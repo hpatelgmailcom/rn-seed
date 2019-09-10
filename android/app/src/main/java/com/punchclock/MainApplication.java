@@ -1,4 +1,4 @@
-package com.airclockapp;
+package com.punchclock;
 
 import android.app.Application;
 

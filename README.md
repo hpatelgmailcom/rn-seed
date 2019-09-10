@@ -109,6 +109,7 @@ To create a new project using the boilerplate:
 - install the npm dependencies by running `yarn`
 - rename the React Native project to your own project name: `yarn run rename -- <YourProjectName>` (the default name is `Boilerplate`)
 - remove the LICENSE file and the "License" section from the README if your project is not open source
+- run `cp App/Config/index.dev.js App/Config/index.js` to start with development configuration
 
 Feel free to remove the section "Using the boilerplate" from the README (you will not need it anymore in your project). You are encouraged to keep the rest of the documentation in your project so that it is self-explanatory.
 
@@ -154,3 +155,49 @@ If we look at the rest (and ignore unmaintained projects), many popular boilerpl
 Finally some did not contain the architecture we are looking for (the separation of concerns with Redux, Sagas, etc.), for example [re-start](https://github.com/react-everywhere/re-start).
 
 One interesting exception is [Ignite IR Boilerplate "Andross"](https://github.com/infinitered/ignite-ir-boilerplate-andross), but after consideration we decided not to use it because of the large amount of unnecessary code/components it provided.
+
+
+## Runnig Rename commands
+
+```
+> AirClockApp@0.0.1 rename /Users/hiren/codebin/ios/clockapp
+> react-native-rename "PunchClock"
+
+/ios/PunchClock RENAMED
+/ios/PunchClock-tvOS RENAMED
+/ios/PunchClock-tvOSTests RENAMED
+/ios/PunchClock.xcodeproj RENAMED
+/ios/PunchClock.xcodeproj/xcshareddata/xcschemes/PunchClock-tvOS.xcscheme RENAMED
+/ios/PunchClock.xcodeproj/xcshareddata/xcschemes/PunchClock.xcscheme RENAMED
+/ios/PunchClockTests RENAMED
+/ios/PunchClockTests/PunchClockTests.m RENAMED
+mv: no such file or directory: /Users/hiren/codebin/ios/clockapp/ios/AirClockApp.xcworkspace
+Ignore above error if this file doesn't exist
+mv: no such file or directory: /Users/hiren/codebin/ios/clockapp/ios/PunchClock/AirClockApp.entitlements
+Ignore above error if this file doesn't exist
+/android/app/src/main/res/values/strings.xml MODIFIED
+/index.js MODIFIED
+/ios/PunchClock/Base.lproj/LaunchScreen.xib MODIFIED
+/ios/PunchClock/Info.plist MODIFIED
+/package.json MODIFIED
+/app.json MODIFIED
+/ios/PunchClock.xcodeproj/project.pbxproj MODIFIED
+/ios/PunchClock.xcodeproj/xcshareddata/xcschemes/PunchClock-tvOS.xcscheme MODIFIED
+/ios/PunchClock.xcodeproj/xcshareddata/xcschemes/PunchClock.xcscheme MODIFIED
+/ios/PunchClock/AppDelegate.m MODIFIED
+/android/settings.gradle MODIFIED
+/ios/PunchClockTests/PunchClockTests.m MODIFIED
+/app.json MODIFIED
+/android/app/src/main/java/com/punchclock BUNDLE INDENTIFIER CHANGED
+/android/app/BUCK MODIFIED
+/android/app/src/main/java/com/punchclock/MainActivity.java MODIFIED
+/android/app/src/main/java/com/punchclock/MainApplication.java MODIFIED
+/android/app/src/main/java/com/punchclock/MainActivity.java MODIFIED
+/android/app/build.gradle MODIFIED
+/android/app/src/main/java/com/punchclock/MainApplication.java MODIFIED
+/android/app/src/main/AndroidManifest.xml MODIFIED
+Done removing previous bundle directory.
+Done removing builds.
+APP SUCCESSFULLY RENAMED TO "PunchClock"! 🎉 🎉 🎉
+Please make sure to run "watchman watch-del-all" and "npm start --reset-cache" before running the app. 
+```

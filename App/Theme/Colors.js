@@ -12,4 +12,7 @@ export default {
   primary: '#007bff',
   success: '#28a745',
   error: '#dc3545',
+  company: '#112e45',
+  white: '#ffffff',
+  black: '#00000',
 }
