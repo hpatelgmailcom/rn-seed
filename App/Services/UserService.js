@@ -20,15 +20,15 @@ const userApiClient = axios.create({
   baseURL: Config.API_URL,
   headers: {
     Accept: 'application/json',
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/json'
   },
-  timeout: 3000,
+  timeout: 3000
 })
 
-function fetchUser() {
+function fetchUser () {
   // Simulate an error 50% of the time just for testing purposes
   if (Math.random() > 0.5) {
-    return new Promise(function(resolve, reject) {
+    return new Promise(function (resolve, reject) {
       resolve(null)
     })
   }
@@ -45,5 +45,5 @@ function fetchUser() {
 }
 
 export const userService = {
-  fetchUser,
+  fetchUser
 }

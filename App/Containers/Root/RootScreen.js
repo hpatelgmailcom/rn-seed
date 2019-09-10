@@ -8,12 +8,12 @@ import StartupActions from 'App/Stores/Startup/Actions'
 import { PropTypes } from 'prop-types'
 
 class RootScreen extends Component {
-  componentDidMount() {
+  componentDidMount () {
     // Run the startup saga when the application is starting
     this.props.startup()
   }
 
-  render() {
+  render () {
     return (
       <View style={styles.container}>
         <AppNavigator
@@ -28,13 +28,13 @@ class RootScreen extends Component {
 }
 
 RootScreen.propTypes = {
-  startup: PropTypes.func,
+  startup: PropTypes.func
 }
 
 const mapStateToProps = (state) => ({})
 
 const mapDispatchToProps = (dispatch) => ({
-  startup: () => dispatch(StartupActions.startup()),
+  startup: () => dispatch(StartupActions.startup())
 })
 
 export default connect(

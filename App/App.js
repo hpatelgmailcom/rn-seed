@@ -7,7 +7,7 @@ import RootScreen from './Containers/Root/RootScreen'
 const { store, persistor } = createStore()
 
 export default class App extends Component {
-  render() {
+  render () {
     return (
       /**
        * @see https://github.com/reduxjs/react-redux/blob/master/docs/api.md#provider-store

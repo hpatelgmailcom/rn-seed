@@ -14,5 +14,5 @@ export default {
   error: '#dc3545',
   company: '#112e45',
   white: '#ffffff',
-  black: '#00000',
+  black: '#00000'
 }

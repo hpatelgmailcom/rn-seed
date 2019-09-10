@@ -9,7 +9,7 @@ export default () => {
      * Register your reducers here.
      * @see https://redux.js.org/api-reference/combinereducers
      */
-    example: ExampleReducer,
+    example: ExampleReducer
   })
 
   return configureStore(rootReducer, rootSaga)

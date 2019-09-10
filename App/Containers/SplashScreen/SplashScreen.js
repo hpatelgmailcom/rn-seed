@@ -4,7 +4,7 @@ import Style from './SplashScreenStyle'
 import { Images } from 'App/Theme'
 
 export default class SplashScreen extends React.Component {
-  render() {
+  render () {
     return (
       <View style={Style.container}>
         <View style={Style.logo}>

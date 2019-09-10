@@ -4,7 +4,7 @@ import {
   AsyncStorage,
   StatusBar,
   View,
-  Text,
+  Text
   // Dimensions,
   // Alert,
 } from 'react-native'
@@ -16,22 +16,22 @@ import PropTypes from 'prop-types'
 export class AuthLoading extends React.Component {
   static propTypes = {
     navigation: PropTypes.shape({
-      navigate: PropTypes.func,
-    }),
-  }
+      navigate: PropTypes.func
+    })
+  };
 
   static defaultProps = {
     navigation: {
-      navigate: () => {},
-    },
-  }
+      navigate: () => {}
+    }
+  };
 
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.bootstrapAsync()
   }
 
-  componentDidMount() {
+  componentDidMount () {
     // Alert.alert('Firing firebase '+ JSON.stringify(firebase.analytics()));
     // firebase
     //   .analytics()
@@ -47,11 +47,11 @@ export class AuthLoading extends React.Component {
     // });
     // This will switch to the App screen or Auth screen and this loading
     // screen will be unmounted and thrown away.
-    this.props.navigation.navigate('Auth') // eslint-disable-line
+    this.props.navigation.navigate(route) // eslint-disable-line
   }
 
   // Render any loading content that you like here
-  render() {
+  render () {
     return (
       <View>
         <Text>AuthLoading</Text>

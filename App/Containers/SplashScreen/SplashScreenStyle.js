@@ -8,18 +8,18 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: Colors.company,
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   logo: {
     alignItems: 'center',
     display: 'flex',
     height: 70,
     justifyContent: 'center',
-    width: 70,
+    width: 70
   },
   name: {
     color: Colors.white,
     fontSize: 48,
-    marginTop: 120,
-  },
+    marginTop: 120
+  }
 })

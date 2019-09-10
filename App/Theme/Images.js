@@ -4,5 +4,5 @@
 
 export default {
   splash: require('App/Assets/Images/Icon-512.png'),
-  logo: require('App/Assets/Images/TOM.png'),
+  logo: require('App/Assets/Images/TOM.png')
 }

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { createAppContainer, createStackNavigator, createSwitchNavigator } from 'react-navigation'
 
 import ExampleScreen from 'App/Containers/Example/ExampleScreen'
@@ -17,18 +18,18 @@ const StackNavigator = createStackNavigator(
     SplashScreen: SplashScreen,
     // The main application screen is our "ExampleScreen". Feel free to replace it with your
     // own screen and remove the example.
-    MainScreen: AuthLoading,
+    MainScreen: AuthLoading
   },
   {
     // By default the application will show the splash screen
     initialRouteName: 'SplashScreen',
     // See https://reactnavigation.org/docs/en/stack-navigator.html#stacknavigatorconfig
-    headerMode: 'none',
+    headerMode: 'none'
   }
 )
 
 const AuthStack = createStackNavigator({
-  MainScreen: Signin,
+  MainScreen: Signin
 })
 
 // const AppStack = createStackNavigator({
@@ -55,12 +56,12 @@ const AuthStack = createStackNavigator({
 const SwitchNavigator = createSwitchNavigator(
   {
     AuthLoading: AuthLoading,
-    Auth: AuthStack,
+    Auth: AuthStack
     // App: AppStack,
     // Admin: AdminStack,
   },
   {
-    initialRouteName: 'AuthLoading',
+    initialRouteName: 'AuthLoading'
   }
 )
 
