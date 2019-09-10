@@ -1,13 +1,9 @@
-import {
-  createAppContainer,
-  createStackNavigator,
-  createSwitchNavigator,
-} from 'react-navigation';
+import { createAppContainer, createStackNavigator, createSwitchNavigator } from 'react-navigation'
 
-import ExampleScreen from 'App/Containers/Example/ExampleScreen';
-import SplashScreen from 'App/Containers/SplashScreen/SplashScreen';
-import AuthLoading from 'App/Containers/Auth/AuthLoading';
-import Signin from 'App/Containers/Auth/Signin';
+import ExampleScreen from 'App/Containers/Example/ExampleScreen'
+import SplashScreen from 'App/Containers/SplashScreen/SplashScreen'
+import AuthLoading from 'App/Containers/Auth/AuthLoading'
+import Signin from 'App/Containers/Auth/Signin'
 
 /**
  * The root screen contains the application's navigation.
@@ -29,11 +25,11 @@ const StackNavigator = createStackNavigator(
     // See https://reactnavigation.org/docs/en/stack-navigator.html#stacknavigatorconfig
     headerMode: 'none',
   }
-);
+)
 
 const AuthStack = createStackNavigator({
   MainScreen: Signin,
-});
+})
 
 // const AppStack = createStackNavigator({
 //   EmployeeList,
@@ -65,10 +61,9 @@ const SwitchNavigator = createSwitchNavigator(
   },
   {
     initialRouteName: 'AuthLoading',
-  },
-);
+  }
+)
 
 export default createAppContainer(SwitchNavigator)
-
 
 // https://github.com/react-navigation/react-navigation/issues/1127
