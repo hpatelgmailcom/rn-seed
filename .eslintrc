@@ -30,6 +30,7 @@
   "rules": {
     "no-underscore-dangle": 0,
     "comma-dangle": ["error"],
+    "semi": ["error", "always"],
     "max-len": [
       "error",
       {
